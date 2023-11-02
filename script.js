@@ -12,12 +12,12 @@ $(document).ready(function() {
 });
 
   const sounds = {
-    s: new Audio('https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3'),
-    f: new Audio('https://s3.amazonaws.com/freecodecamp/drums/Heater-2.mp3'),
-    b: new Audio('https://s3.amazonaws.com/freecodecamp/drums/Heater-3.mp3'),
-    t: new Audio('https://s3.amazonaws.com/freecodecamp/drums/Heater-4_1.mp3'),
-    h: new Audio('https://s3.amazonaws.com/freecodecamp/drums/Heater-6.mp3'),
-    c: new Audio('https://s3.amazonaws.com/freecodecamp/drums/Dsc_Oh.mp3'),
+    a: new Audio('https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3'),
+    s: new Audio('https://s3.amazonaws.com/freecodecamp/drums/Heater-2.mp3'),
+    d: new Audio('https://s3.amazonaws.com/freecodecamp/drums/Heater-3.mp3'),
+    f: new Audio('https://s3.amazonaws.com/freecodecamp/drums/Heater-4_1.mp3'),
+    g: new Audio('https://s3.amazonaws.com/freecodecamp/drums/Heater-6.mp3'),
+    h: new Audio('https://s3.amazonaws.com/freecodecamp/drums/Dsc_Oh.mp3'),
   };
 
   function playSound(key) {
