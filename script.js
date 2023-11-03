@@ -12,12 +12,18 @@ $(document).ready(function() {
 });
 
   const sounds = {
-    a: new Audio('/week8/Dry-Brush Snares/SnareBR_2-017.wav'),
-    s: new Audio('/week8/Dry-Toms/Tom_1-000.wav'),
-    d: new Audio('/week8/Dry-Percussion/Perc_1-002.wav'),
-    f: new Audio('/week8/Dry-Kicks/Kick_1-002.wav'),
-    g: new Audio('/week8/Dry-Snares/Snares1 A/Snare_1-026.wav'),
-    h: new Audio('/week8/Dry-Hats/Hats2 26-56/Hat_2-045.wav'),
+    a: new Audio('SnareBR_2-017.wav'),
+    s: new Audio('Tom_1-000.wav'),
+    d: new Audio('Perc_1-002.wav'),
+    f: new Audio('Kick_1-002.wav'),
+    g: new Audio('Snare_1-026.wav'),
+    k: new Audio('Hat_2-045.wav'),
+    ฟ: new Audio('SnareBR_2-017.wav'),
+    ห: new Audio('Tom_1-000.wav'),
+    ก: new Audio('Perc_1-002.wav'),
+    ด: new Audio('Kick_1-002.wav'),
+    เ: new Audio('Snare_1-026.wav'),
+    า: new Audio('Hat_2-045.wav')
   };
 
   function playSound(key) {
@@ -38,3 +44,29 @@ $(document).ready(function() {
       playSound(key);
     }
   });
+
+  
+  $(document).keydown(function(event) {
+    const key = event.key.toLowerCase();
+    if (['a', 's', 'd', 'f', 'g', 'k'].includes(key)) {
+      $(`.drum button[data-key="${key}"]`).css('background-color', '#38d083');
+    }
+  });
+  
+$(document).keyup(function (event) {
+  const key = event.key.toLowerCase();
+  if (['a', 's', 'd', 'f', 'g', 'k'].includes(key)) {
+    $(`.drum button[data-key="${key}"]`).css('background-color', 'rgba(22, 22, 22, 0.7)');
+  }
+});
+  
+  $('.drum button').hover(
+    function() {
+      $(this).css('background-color', '#38d083');
+    },
+    function() {
+      $(this).css('background-color', 'rgba(22, 22, 22, 0.7)');
+    }
+  );
+  
+  
