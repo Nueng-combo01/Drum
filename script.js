@@ -12,12 +12,12 @@ $(document).ready(function() {
 });
 
   const sounds = {
-    a: new Audio('https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3'),
-    s: new Audio('https://s3.amazonaws.com/freecodecamp/drums/Heater-2.mp3'),
-    d: new Audio('https://s3.amazonaws.com/freecodecamp/drums/Heater-3.mp3'),
-    f: new Audio('https://s3.amazonaws.com/freecodecamp/drums/Heater-4_1.mp3'),
-    g: new Audio('https://s3.amazonaws.com/freecodecamp/drums/Heater-6.mp3'),
-    h: new Audio('https://s3.amazonaws.com/freecodecamp/drums/Dsc_Oh.mp3'),
+    a: new Audio('/week8/Dry-Brush Snares/SnareBR_2-017.wav'),
+    s: new Audio('/week8/Dry-Toms/Tom_1-000.wav'),
+    d: new Audio('/week8/Dry-Percussion/Perc_1-002.wav'),
+    f: new Audio('/week8/Dry-Kicks/Kick_1-002.wav'),
+    g: new Audio('/week8/Dry-Snares/Snares1 A/Snare_1-026.wav'),
+    h: new Audio('/week8/Dry-Hats/Hats2 26-56/Hat_2-045.wav'),
   };
 
   function playSound(key) {
